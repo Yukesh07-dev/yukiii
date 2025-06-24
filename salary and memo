@@ -10,8 +10,9 @@ for i in remaining:
         to_add.append(i)
     if(len(to_add)==3):
         break
-removed.append(to_add)
+res=removed+to_add
 p=1
-for i in remaining:
-    print("{}.{} is removed,memo is {} and salary is {}".format(p,i[0],i[1],i[2]))
+for i in res:
+    print("{}. {} is removed,memo is {} and salary is {}".format(p,i[0],i[1],i[2]))
     p+=1
+
