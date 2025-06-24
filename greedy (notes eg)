@@ -1,0 +1,9 @@
+amount=int(input("enter the amount:"))
+notes=[500,200,100,50,20,10,2,1]
+temp={}
+for i in notes:
+    if(amount>=i):
+        count=amount//i
+        temp[i]=count
+        amount=amount-count*i
+print(temp)
