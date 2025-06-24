@@ -1,0 +1,17 @@
+name=["a","b","c","d","e","f","g","h","i","j"]
+memo=[0,1,1,1,2,2,1,2,1,2]
+salary=[1000,2000,3000,4500,2000,5000,1500,2300,1300,1100]
+added=list(zip(name,memo,salary))
+removed=[i for i in added if i[2]>4000]
+remaining=[i for i in added if i[2]<=4000]
+to_add=[]
+for i in remaining:
+    if(i[1]>1):
+        to_add.append(i)
+    if(len(to_add)==3):
+        break
+removed.append(to_add)
+p=1
+for i in remaining:
+    print("{}.{} is removed,memo is {} and salary is {}".format(p,i[0],i[1],i[2]))
+    p+=1
