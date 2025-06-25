@@ -1,0 +1,31 @@
+def circle():
+    r=int(input("enter radius: "))
+    print(3.14*r*r)
+def square(sq):
+    print(sq*sq)
+def rectangle():
+    l=int(input("enter length"))
+    b=int(input("enter breadth"))
+    return l*b
+def triangle():
+    return 0.5*b*h
+while(True):
+    print("1.circle")
+    print("2.square")
+    print("3.rectangle")
+    print("4.triangle")
+    ch=int(input("enter your choice"))
+    match ch:
+        case 1:
+            circle()
+        case 2:
+            sq=int(input("enter sq:"))
+            square(sq)
+        case 3:
+            res=rectangle()
+            print(res)
+        case 4:
+            b=int(input("enter b:"))
+            h=int(input("enter h"))
+            ress=triangle(b,h)
+            print(ress)
