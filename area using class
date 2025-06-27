@@ -1,0 +1,21 @@
+class rec():
+    def dimension (self,length,breadth):
+        self.length =length
+        self.breadth = breadth
+    def area (self):
+       return self.length*self.breadth
+li=[]
+ch=int(input("enter your choice :"))
+for i in range(ch):
+    r=rec()
+    length=int(input("enter length :"))
+    breadth=int(input("enter breadth :"))
+    r.dimension(length,breadth)
+    li.append(r)
+    print("=====================================")
+for i in li:
+    pos=1
+    print(" the area of rectangle {}".format(pos))
+    pos=pos+1
+    print("the area is ",i.area())
+    
