@@ -13,8 +13,8 @@ for i in range(ch):
     r.dimension(length,breadth)
     li.append(r)
     print("=====================================")
+pos=1
 for i in li:
-    pos=1
     print(" the area of rectangle {}".format(pos))
     pos=pos+1
     print("the area is ",i.area())
